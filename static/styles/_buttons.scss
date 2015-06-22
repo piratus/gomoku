@@ -1,0 +1,59 @@
+button {
+  display: inline-block;
+  box-sizing: border-box;
+  zoom: 1;
+  line-height: normal;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+
+  padding: 0.5em 1em;
+  color: rgba(0, 0, 0, .8);
+  text-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #E6E6E6;
+  text-decoration: none;
+  border-radius: 2px;
+
+  &[type="submit"] {
+    background-color: dodgerblue;
+    color: white;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .5);
+  }
+
+  &[type="reset"] {
+    background-color: tomato;
+    color: white;
+    text-shadow: 0 0 1px rgba(0, 0, 0, .5);
+  }
+
+  &[disabled] {
+    border: none;
+    background-image: none;
+    opacity: 0.40;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+
+  &:focus,
+  &:hover {
+    background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10));
+    border-color: rgba(0, 0, 0, .2);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.10), rgba(0, 0, 0, 0.05) 60%, transparent);
+    border-color: rgba(0, 0, 0, .3);
+  }
+
+  &::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+  }
+}

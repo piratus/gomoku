@@ -1,0 +1,18 @@
+{
+  "extends": "@piratus/eslint-config-piratus/react",
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true
+  },
+  "env": {
+    "browser": true,
+    "es6": true
+  },
+  "globals": {
+    "DEBUG": true
+  },
+  "rules": {
+    "padded-blocks": 0,
+    "object-shorthand": 0  // this one seems broken
+  }
+}

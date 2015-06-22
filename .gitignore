@@ -1,0 +1,14 @@
+# Editor
+.idea/
+
+# Tools garbage
+__pycache__/
+*.py[cod]
+*.egg-info
+npm-debug.log
+
+# Generated
+build/
+dist/
+venv/
+node_modules/

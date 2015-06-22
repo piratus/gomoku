@@ -1,0 +1,36 @@
+.dashboard {
+  min-width: 80%;
+  background-color: rgba(248, 248, 255, .8);
+  box-sizing: border-box;
+  padding: 1em 2em;
+
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 0 0 2px gray;
+
+  .games-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .header {
+      text-align: center;
+    }
+
+    .game {
+      display: flex;
+      flex-flow: row nowrap;
+      align-items: center;
+      justify-content: space-around;
+
+      button,
+      .player {
+        width: 40%;
+      }
+
+      .player {
+        text-align: center;
+      }
+    }
+  }
+}

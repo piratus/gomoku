@@ -1,0 +1,4 @@
+include Makefile requirements.txt
+
+include dist/*.js dist/*.css
+include conf/*

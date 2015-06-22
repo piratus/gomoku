@@ -1,0 +1,22 @@
+#application {
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+
+  > section {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  #application {
+    width: 100%;
+  }
+}

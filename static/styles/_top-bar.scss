@@ -1,0 +1,47 @@
+.top-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+
+  box-sizing: border-box;
+  padding: .5em 1em;
+
+  background: black linear-gradient(transparent, rgba(255, 255, 255, .10) 30%, rgba(255, 255, 255, .05));
+  color: #eeeeee;
+
+  nav {
+    display: inline-flex;
+    flex-flow: inherit;
+    justify-content: space-between;
+    align-items: stretch;
+
+    li {
+      list-style: none;
+      padding: 0 .25rem;
+      &:not(:last-child) {
+        border-right: 1px solid gray;
+      }
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  .socket-status {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+
+    background: tomato linear-gradient(transparent, rgba(0, 0, 0, 0.05) 40%, rgba(0, 0, 0, 0.10));
+    transition: all .5s ease-in;
+
+    &.is-connected {
+      background-color: limegreen;
+    }
+  }
+
+}
